@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--cdn//font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--style page integration-->
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+<body>
+    <header>
+        <!--Header part//paragraph-->
+        <h1 class=" display-3">Work Day Scheduler</h1>
+        <p class="simple">A simple calender app for scheduling your work day</p>
+        <p id="currentDay" class="simple"></p>
+    </header>
+    <!--containers for time blocks-->
+    <div class="container">
+        <div class="row">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <!--input group text on the left side-->
+                    <span class="input-group-text  time">09:00am</span>
+                </div>
+                <!--Save button//right side on the page-->
+                <textarea class="form-control" id="9morning" ></textarea>
+                <button type="button" class="btnS"> <i class="fas fa-save"></i> </button>
+            </div>
+
+            
+        </div>
+        <div class="row">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <!--input group text time on the left side-->
+                    <span class="input-group-text  time">10:00am</span>
+                </div>
+                <textarea class="form-control" id="10morning" ></textarea>
+                <button type="button" class="btnS"> <i class="fas fa-save"></i> </button>
+            </div>
+
+            
+        </div>
+        <div class="row">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <!--input group text time on the left side-->
+                    <span class="input-group-text  time">11:00am</span>
+                </div>
+                <textarea class="form-control" id="11morning" ></textarea>
+                <button type="button" class="btnS"> <i class="fas fa-save"></i> </button>
+            </div>
+
+            
+        </div>
+        <div class="row">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <!--input group text time on the left side-->
+                    <span class="input-group-text  time">12:00pm</span>
+                </div>
+                <textarea class="form-control" id="12afternoon" ></textarea>
+                <button type="button" class="btnS" > <i class="fas fa-save"></i> </button>
+            </div>
+
+            
+        </div>
+        <div class="row">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <!--input group text time on the left side-->
+                    <span class="input-group-text  time">13:00pm</span>
+                </div>
+                <textarea class="form-control" id="13afternoon" ></textarea>
+                <button type="button" class="btnS" > <i class="fas fa-save"></i> </button>
+            </div>
+
+            
+        </div>
+        <div class="row">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <!--input group text time on the left side-->
+                    <span class="input-group-text  time">14:00pm</span>
+                </div>
+                <textarea class="form-control" id="14afternoon" ></textarea>
+                <button type="button" class="btnS"> <i class="fas fa-save"></i> </button>
+            </div>
+
+            
+        </div>
+        <div class="row">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <!--input group text time on the left side-->
+                    <span class="input-group-text  time">15:00pm</span>
+                </div>
+                <textarea class="form-control" id="15afternoon" ></textarea>
+                <button type="button" class="btnS"> <i class="fas fa-save"></i> </button>
+            </div>
+
+            
+        </div>
+        <div class="row">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <!--input group text time on the left side-->
+                    <span class="input-group-text  time">16:00pm</span>
+                </div>
+                <textarea class="form-control" id="16afternoon" ></textarea>
+                <button type="button" class="btnS"> <i class="fas fa-save"></i> </button>
+            </div>
+
+            
+        </div>
+        <div class="row">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <!--input group text time on the left side-->
+                    <span class="input-group-text  time">17:00pm</span>
+                </div>
+                <textarea class="form-control" id="17afternoon" ></textarea>
+                <button type="button" class="btnS"> <i class="fas fa-save"></i> </button>
+            </div>
+
+            
+        </div>
+
+
+
+        <button type="button" id="clearDay" class="btn btn-info">Clear Day</button>
+
+
+
+
+    </div>
+
+    
+    
+    
+    
+    
+    
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- dayjs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.7/dayjs.min.js" integrity="sha512-hcV6DX35BKgiTiWYrJgPbu3FxS6CsCjKgmrsPRpUPkXWbvPiKxvSVSdhWX0yXcPctOI2FJ4WP6N1zH+17B/sAA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
