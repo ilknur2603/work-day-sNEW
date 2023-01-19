@@ -1,0 +1,49 @@
+body{background-color:rgb(194, 238, 241);
+}
+.past{
+    background-color: yellow;
+}
+.future{
+    background-color: green;
+}
+.current{
+    background-color: red;
+}
+.textarea {
+    background:transparent ;
+    border: 2px;
+    resize: none;
+    color: #251d1d;
+    border-left: 2px solid black;
+    padding: 10px;
+  }
+  .simple{
+    background-color: bisque;
+    border: 3px;
+    border-color: #251d1d;
+    margin:10px;
+    margin-left: 480px;
+    width:950px;
+    height:50px;
+    text-align: center;
+    
+
+  }
+  .display-3{
+    margin-left:620px;
+    background-color: rgb(89, 89, 216);
+    width:550px;
+    border:20px;
+    border-color:black;
+
+  }
+
+  .input-group-text{
+    border-color: black;
+    height:50px;
+    
+  }
+#clearDay{
+    margin-left: 550px;
+    width:150px;
+}
