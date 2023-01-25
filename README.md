@@ -26,4 +26,6 @@ WHEN I refresh the page
 THEN the saved events persist
 ```
 
+
+![Random User App](https://github.com/ilknur2603/work-day-sNEW/blob/main/05-third-party-apis-homework-demo.gif)
 Ilknur Dayanc
